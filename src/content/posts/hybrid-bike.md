@@ -1,6 +1,7 @@
 ---
 title: クロスバイクを買った話
 published: 2025-12-28
+updated: 2025-12-29
 description: 昔使っていた自転車が使い物にならなくなったので自転車を買いました
 tags: [diary]
 category: diary
