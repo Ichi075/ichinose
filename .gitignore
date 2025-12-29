@@ -1,6 +1,8 @@
 # build output
 dist/
 
+/src/content/posts/.obsidian/
+
 # generated types
 .astro/
 
