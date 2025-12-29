@@ -24,9 +24,11 @@ Obsidian CopilotとはObsidian上でLLMとチャットし、質問や生成が�
   - LM Studio
 
 ## 使用するモデル
-Llama-3-ELYZA-JP-8Bのgguf版を使用します
+Llama-3-ELYZA-JP-8Bのgguf版を使用します  
+詳細については[こちら](https://note.com/elyza/n/n360b6084fdbd)のnoteからも見れます
 > [elyza/Llama-3-ELYZA-JP-8B-GGUF](https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B-GGUF)
 
 ## 結果
-**まともに動きませんでした**
-生成はしてくれたんですがあまりにも遅いかつ、他の作業ができないくらい重かったです
+**まともに動きませんでした**  
+生成はしてくれたんですがあまりにも遅いかつ、他の作業ができないくらい重かったです  
+違う方法なら軽く動作するかもしれないので試していきたいです
