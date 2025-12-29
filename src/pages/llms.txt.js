@@ -1,18 +1,19 @@
-import { getCollection } from "astro:content";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getSortedPosts } from "../utils/content-utils";
+import { siteConfig } from "../config";
+
 export async function GET(context) {
-  // Retrieve the article collection (replace links as appropriate)
-  const posts = await getCollection("articles");
+  // Retrieve the posts collection
+  const posts = await getSortedPosts();
   const items = posts.map((post) => ({
     ...post.data,
-    link: new URL(`/articles/${post.slug}/`, context.site).toString(),
+    link: new URL(`/posts/${post.slug}/`, context.site).toString(),
   }));
   // Generate contents of llms.txt
-  context = `# ${SITE_TITLE}\n\n> ${SITE_DESCRIPTION}\n\n## Articles\n\n${items
-    .map((item) => `- [${item.title}](${item.link}): ${item.description}`)
+  const content = `# ${siteConfig.title}\n\n> ${siteConfig.subtitle}\n\n## Posts\n\n${items
+    .map((item) => `- [${item.title}](${item.link}): ${item.description || "No description"}`)
     .join("\n")}`;
   // Return response as a text file
-  return new Response(context, {
+  return new Response(content, {
     headers: {
       "Content-Type": "text/plain",
     },
