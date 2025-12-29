@@ -25,8 +25,8 @@ Obsidian CopilotとはObsidian上でLLMとチャットし、質問や生成が�
 
 ## 使用するモデル
 Llama-3-ELYZA-JP-8Bのgguf版を使用します
-::huggingface{repo="elyza/Llama-3-ELYZA-JP-8B-GGUF"}
-https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B-GGUF
+> [elyza/Llama-3-ELYZA-JP-8B-GGUF](https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B-GGUF)
 
 ## 結果
 **まともに動きませんでした**
+生成はしてくれたんですがあまりにも遅いかつ、他の作業ができないくらい重かったです
